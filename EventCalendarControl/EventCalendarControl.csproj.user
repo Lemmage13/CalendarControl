@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="CalendarDay.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TestWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TimePicker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CalendarDay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EventControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MonthView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TestWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TimePicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

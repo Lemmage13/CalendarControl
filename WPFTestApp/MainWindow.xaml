@@ -1,0 +1,51 @@
+﻿<Window x:Class="WPFTestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:EventCalendarControl;assembly=EventCalendarControl"
+        xmlns:local="clr-namespace:WPFTestApp" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Make Event" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock Text="Name" Grid.Row="1" Grid.Column="1"/>
+            <TextBox Name ="EventName" Grid.Row="1" Grid.Column="2"/>
+            <TextBlock Text="Start Time" Grid.Row="2" Grid.Column="1"/>
+            <uc:TimePicker Name="StartTime" Grid.Row="2" Grid.Column="2"/>
+            <DatePicker Name="StartDate" Grid.Row="2" Grid.Column="3"/>
+            <TextBlock Text="End Time" Grid.Row="3" Grid.Column="1"/>
+            <uc:TimePicker Name="EndTime" Grid.Row="3" Grid.Column="2"/>
+            <DatePicker Name="EndDate" Grid.Row="3" Grid.Column="3"/>
+            <TextBlock Text="Details" Grid.Row="4" Grid.Column="1"/>
+            <TextBox Name="EventDescription" Grid.Row="4" Grid.Column="2"/>
+            <Button Grid.Row="5" Grid.Column="2" Content="Make Event" Click="MakeEvent_Click"/>
+            <Button Grid.Row="5" Grid.Column="3" Content="Open Calendar" Click="Calendar_Click"/>
+        </Grid> 
+    </Grid>
+</Window>
